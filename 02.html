@@ -1,0 +1,27 @@
+<html>
+
+<head>
+  <title>Challenge 02</title>
+  <link rel="stylesheet" href="./css/02.css">
+</head>
+
+<body>
+  <div class="frame">
+    <div class="center">
+      <div class="menu-icon">
+        <div class="line-1 no-animation"></div>
+        <div class="line-2 no-animation"></div>
+        <div class="line-3 no-animation"></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>
+  $('.menu-icon').bind('click', function () {
+    $(this).toggleClass('active');
+    $(this).find('div').removeClass('no-animation');
+  });
+</script>
+
+</html>
